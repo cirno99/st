@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "SauceCodePro Nerd Font Mono:pixelsize=30:antialias=true:autohint=true";
+static char *font = "FiraCode Nerd Font Mono:pixelsize=15:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -94,31 +94,31 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.61;
+float alpha = 0.82;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-
-  /* 8 normal colors */
   [0] = "#000000", /* black   */
-  [1] = "#e06c75", /* red     */
-  [2] = "#98c379", /* green   */
-  [3] = "#d19a66", /* yellow  */
+  [1] = "#ff5555", /* red     */
+  [2] = "#50fa7b", /* green   */
+  [3] = "#f1fa8c", /* yellow  */
   [4] = "#bd93f9", /* blue    */
-  [5] = "#c678dd", /* magenta */
-  [6] = "#56b6c2", /* cyan    */
+  [5] = "#ff79c6", /* magenta */
+  [6] = "#8be9fd", /* cyan    */
   [7] = "#bbbbbb", /* white   */
 
-  /* special colors */
-  [8] = "#000000", /* black   */
-  [9] = "#e06c75", /* red     */
-  [10] = "#98c379", /* green   */
-  [11] = "#d19a66", /* yellow  */
+  /* 8 bright colors */
+  [8]  = "#44475a", /* black   */
+  [9]  = "#ff5555", /* red     */
+  [10] = "#50fa7b", /* green   */
+  [11] = "#f1fa8c", /* yellow  */
   [12] = "#bd93f9", /* blue    */
-  [13] = "#c678dd", /* magenta */
-  [14] = "#56b6c2", /* cyan    */
-  [15] = "#bbbbbb", /* white   */
- [256] = "#000000", /* background */
+  [13] = "#ff79c6", /* magenta */
+  [14] = "#8be9fd", /* cyan    */
+  [15] = "#ffffff", /* white   */
+
+  /* special colors */
+  [256] = "#111111", /* background */
   [257] = "#f8f8f2", /* foreground */
 };
 
@@ -151,7 +151,7 @@ unsigned int defaultunderline = 7;
  * 6: steady bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorstyle = 5;
+static unsigned int cursorstyle = 1;
 
 /*
  * Default columns and rows numbers
